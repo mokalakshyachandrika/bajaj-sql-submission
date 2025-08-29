@@ -23,7 +23,7 @@ jobs:
       run: mvn clean package -DskipTests
 
     - name: Upload JAR artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: bajaj-sql-task-jar
         path: target/*.jar
